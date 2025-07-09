@@ -1,0 +1,36 @@
+.card {
+  transition: all 0.3s ease;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #444;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+.lista {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+    margin-top: 4%;
+}

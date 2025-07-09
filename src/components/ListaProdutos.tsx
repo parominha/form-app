@@ -13,7 +13,7 @@ type List = {
 const ListaProdutos = ({ produtos }: List) => {
     return (
         <>
-            <div style={{ display: 'flex', gap: 25, flexWrap: 'wrap', justifyContent: 'center'}}>
+            <div style={{ display: 'flex', gap: 25, flexWrap: 'wrap', justifyContent: 'space-evenly'}}>
                 {produtos.map((produto, index) => (
                     <Produto key={index} nome={produto.nome} preco={produto.preco} emEstoque={produto.emEstoque} />
                 ))}

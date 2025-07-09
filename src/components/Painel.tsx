@@ -1,13 +1,14 @@
 type Props = {
     titulo: string,
     children: React.ReactNode,
+    color?: string
 }
 
 const Painel = (props: Props) => {
     return (
-        <div style={{textAlign: 'center'}}>
-            <h2>{props.titulo}</h2>
-            <div style={{textAlign: 'left'}}>{props.children}</div>
+        <div style={{ textAlign: 'center' }}>
+            <h1 style={{ color: props.color }}>{props.titulo}</h1>
+            {props.children}
         </div>
     )
 }
